@@ -2,24 +2,27 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "New Event 3",
+    "title": "New Event 5",
     "details": "...",
-    "maximumAttendees": 1
+    "maximumAttendees": 5
 }
 
 ###
 
-POST http://localhost:3333/events/accf42b6-c1b0-41da-8ad0-99aec1c2e8a6/attendees
+POST http://localhost:3333/events/5877937d-19b1-46e4-8bd5-ce22d04260f6/attendees
 Content-Type: application/json
 
 {
     "name": "Alexandre Lima",
-    "email": "alexandre@gmail.com"
+    "email": "alexandre4@gmail.com"
 }
 
 ###
 
-GET http://localhost:3333/events/accf42b6-c1b0-41da-8ad0-99aec1c2e8a6
+GET http://localhost:3333/events/5877937d-19b1-46e4-8bd5-ce22d04260f6
 
 ###
-GET http://localhost:3333/attendees/2/badge
+GET http://localhost:3333/attendees/1/badge
+
+###
+GET http://localhost:3333/attendees/1/check-in
